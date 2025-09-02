@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties Search : VeroSpace</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      xintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- CSS for Styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pages/properties.css" />
+    <link rel="stylesheet" href="./css/responsiveCSS.css" />
+
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+              <img src="./assets/logos/Group 24.png" alt="" />
+            </a>
+            <div class="menu" id="menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-links">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about.html">About Us</a></li>
+              <li><a class="nav-link" href="properties.html">Properties</a></li>
+            </ul>
+            <div class="nav-btns">
+              <a href="contact-us.html" class="nav-link">Contact Us</a>
+              <a href="#" class="btn-login" id="loginBtn">Login</a>
+            </div>
+          </nav>
+          <div class="mobile-overlay">
+            <button class="close-menu">×</button>
+            <div class="mobile-menu-content">
+              <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li>
+                  <a href="properties.html" class="nav-link">Properties</a>
+                </li>
+                <li>
+                  <a href="contact-us.html" class="nav-link">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-login" id="mobileLoginBtn">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+
+    <section class="banner-section">
+      <div class="banner-wrppr2">
+        <div class="container">
+          <div class="banner-content" data-aos="fade-left" data-aos-duration="500">
+            <h1>Properties</h1>
+            <p>
+              <a href="index.html">Home</a>
+              <span class="arrow">
+                <img src="./assets/icons/mdi_arrow-right-thin.png" alt="" />
+              </span>
+              <a href="properties.html">Properties</a>
+            </p>
+          </div>
+
+          <div
+            class="floating-search1"
+          >
+            <div class="form-area">
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group">
+                    <div class="property-logo">
+                      <img src="./assets/icons/dollar-sign 1.png" alt="" />
+                    </div>
+                    <label for="property-for"></label>
+                    <select name="property-for" id="property-for">
+                      <option value="rent" selected>Rent</option>
+                      <option value="buy">Buy</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="location-search"
+                      id="location-search"
+                      placeholder="Your desiered location goes here"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="house-logo">
+                      <img src="./assets/icons/Frame.png" alt="" />
+                    </div>
+                    <label for="property-type"></label>
+                    <select name="property-type" id="property-type">
+                      <option value="house" selected>House</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="villa">Villa</option>
+                      <option value="residential">Residential</option>
+                      <option value="commercial">Commercial</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <div class="price-range">
+                      <span>Price Range</span>
+                      <div class="currency-selector">
+                        <div class="price-logo">
+                          <img src="./assets/icons/$.png" alt="" />
+                        </div>
+                        <label for="currency-selector"></label>
+                        <select name="currency-selector" id="currency-selector">
+                          <option value="usd">USD</option>
+                          <option value="eur">EUR</option>
+                          <option value="inr">INR</option>
+                          <option value="cad">CAD</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-container">
+                    <div class="range-slider" id="range-slider">
+                      <div class="track" id="track"></div>
+                      <input
+                        type="range"
+                        id="min-range"
+                        min="0"
+                        max="20000"
+                        step="1000"
+                        value="5000"
+                      />
+                      <input
+                        type="range"
+                        id="max-range"
+                        min="0"
+                        max="20000"
+                        step="1000"
+                        value="15000"
+                      />
+                      <div class="price-label" id="min-label">$ 5,000</div>
+                      <div class="price-label" id="max-label">$ 15,000</div>
+                    </div>
+                  </div>
+                  <div class="room-type">
+                    <div class="room-logo">
+                      <img
+                        src="./assets/icons/ic_round-meeting-room.png"
+                        alt=""
+                      />
+                    </div>
+                    <select name="room-numbers" id="room-numbers">
+                      <option value="1">1 Rooms</option>
+                      <option value="2" selected>2 Rooms</option>
+                      <option value="3">3 Rooms</option>
+                      <option value="4">4 Rooms</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div class="floating-search-divider"></div>
+              <button type="submit" class="btn-search" onclick="window.location.href='properties.html'">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties Details Section-->
+
+    <section class="properties-details-section">
+      <div class="container">
+        <div class="properties-details-content">
+          <div class="col-3" data-aos="fade-right" data-aos-duration="500">
+            <div class="property-sidebar-form" id="propertySidebarForm">
+              <form id="propertyFilterForm">
+                <!-- This form is hidden on mobile -->
+                <div class="property-filter-group">
+                  <label for="propertyCountry" class="property-filter-label"
+                    >Country</label
+                  >
+                  <select id="propertyCountry" class="property-select" required>
+                    <option value="">Select Country</option>
+                    <option value="india" selected>India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                  </select>
+                </div>
+
+                <div class="property-filter-group">
+                  <label for="propertyCity" class="property-filter-label"
+                    >City</label
+                  >
+                  <select id="propertyCity" class="property-select" required>
+                    <option value="">Select City</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                  </select>
+                </div>
+
+                <div class="property-filter-group">
+                  <label for="propertyCategory" class="property-filter-label"
+                    >Property Category</label
+                  >
+                  <select
+                    id="propertyCategory"
+                    class="property-select"
+                    required
+                  >
+                    <option value="">Select Category</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                    <option value="house">House</option>
+                  </select>
+                </div>
+
+                <div class="property-filter-group">
+                  <label class="property-filter-label">Amenities</label>
+                  <ul class="property-amenities-list">
+                    <li class="property-amenity-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="amenities"
+                          value="supermarket"
+                        />
+                        Near Super Market
+                      </label>
+                      <span class="property-amenity-count">3002</span>
+                    </li>
+                    <li class="property-amenity-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="amenities"
+                          value="hospital"
+                        />
+                        Near Hospital
+                      </label>
+                      <span class="property-amenity-count">530</span>
+                    </li>
+                    <li class="property-amenity-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="amenities"
+                          value="internet"
+                        />
+                        Internet
+                      </label>
+                      <span class="property-amenity-count">4561</span>
+                    </li>
+                    <li class="property-amenity-item">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="amenities"
+                          value="kidzones"
+                        />
+                        Kid Zones
+                      </label>
+                      <span class="property-amenity-count">564</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="property-filter-group">
+                  <label class="property-filter-label"
+                    >Number of Bedroom's</label
+                  >
+                  <div class="property-room-options">
+                    <div class="input-group">
+                      <input type="checkbox" name="room1" id="room1" />
+                      <label for="room1">Room 1</label>
+                    </div>
+                    <div class="input-group">
+                      <input type="checkbox" name="room2" id="room2" />
+                      <label for="room2">Room 2</label>
+                    </div>
+                    <div class="input-group">
+                      <input type="checkbox" name="room3" id="room3" />
+                      <label for="room3">Room 3</label>
+                    </div>
+                    <div class="input-group">
+                      <input type="checkbox" name="room4" id="room4" />
+                      <label for="room4">Room 4</label>
+                    </div>
+                    <div class="input-group">
+                      <input type="checkbox" name="room5" id="room5" />
+                      <label for="room5">Room 5</label>
+                    </div>
+                    <div class="input-group">
+                      <input type="checkbox" name="room6" id="room6" />
+                      <label for="room6">Room 6</label>
+                    </div>
+                    <div class="input-group">
+                      <input type="checkbox" name="room7" id="room7" />
+                      <label for="room7">Room 7</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="property-filter-group">
+                  <label class="property-filter-label">Square Feet</label>
+                  <div class="custom-slider" id="sqft-slider">
+                    <div class="slider-track"></div>
+                    <div class="slider-range"></div>
+                    <div class="slider-thumb" data-thumb="min"></div>
+                    <div class="slider-thumb" data-thumb="max"></div>
+                  </div>
+                </div>
+
+                <div class="property-filter-group">
+                  <label class="property-filter-label">Price Range</label>
+                  <div class="custom-slider" id="price-slider">
+                    <div class="slider-track"></div>
+                    <div class="slider-range"></div>
+                    <div class="slider-thumb" data-thumb="min"></div>
+                    <div class="slider-thumb" data-thumb="max"></div>
+                  </div>
+                </div>
+
+                <button type="submit" class="property-apply-btn">Apply</button>
+              </form>
+            </div>
+
+            <!-- Dropdown Filters for Mobile -->
+            <div id="propertyDropdownFilters">
+              <!-- Country Filter -->
+              <div class="filter-dropdown-group">
+                <select
+                  id="dropdownCountry"
+                  class="property-select-dropdown"
+                  required
+                >
+                  <option value="">Select Country</option>
+                  <option value="india" selected>India</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                </select>
+              </div>
+              <!-- City Filter -->
+              <div class="filter-dropdown-group">
+                <select
+                  id="dropdownCity"
+                  class="property-select-dropdown"
+                  required
+                >
+                  <option value="">Select City</option>
+                  <option value="gurgaon">Gurgaon</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="mumbai">Mumbai</option>
+                </select>
+              </div>
+              <!-- Property Category Filter -->
+              <div class="filter-dropdown-group">
+                <select
+                  id="dropdownCategory"
+                  class="property-select-dropdown"
+                  required
+                >
+                  <option value="">Select Category</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="villa">Villa</option>
+                  <option value="house">House</option>
+                </select>
+              </div>
+              <!-- Amenities Filter -->
+              <div class="filter-dropdown-group">
+                <select
+                  id="amenitiesDropdownSelect"
+                  class="property-select-dropdown"
+                  name="amenities"
+                >
+                  <option value="">Amenities</option>
+                  <option value="supermarket">Near Super Market</option>
+                  <option value="hospital">Near Hospital</option>
+                  <option value="internet">Internet</option>
+                  <option value="kidzones">Kid Zones</option>
+                </select>
+              </div>
+              <!-- Bedrooms Filter -->
+              <div class="filter-dropdown-group">
+                <select
+                  id="bedroomDropdownSelect"
+                  class="property-select-dropdown"
+                  name="bedrooms"
+                >
+                  <option value="">Bedrooms</option>
+                  <option value="1">Room 1</option>
+                  <option value="2">Room 2</option>
+                  <option value="3">Room 3</option>
+                  <option value="4">Room 4</option>
+                  <option value="5">Room 5</option>
+                  <option value="6">Room 6</option>
+                  <option value="7">Room 7</option>
+                </select>
+              </div>
+              <!-- Apply Button -->
+              <button class="property-apply-btn" style="margin-top: 12px">
+                Apply Filters
+              </button>
+            </div>
+          </div>
+
+          <div class="col-9" data-aos="fade-left" data-aos-duration="500">
+            <div class="property-listings-grid">
+              <!-- Property 1 -->
+              <div class="property-listing-card">
+                <div class="property-card-image">
+                  <img
+                    src="./assets/Rectangle 29.png"
+                    alt="Sobha Heartland Villa"
+                  />
+                  <div class="property-card-badge">For Rent</div>
+                </div>
+                <div class="property-card-info">
+                  <div class="property-card-type">Villa</div>
+                  <h3 class="property-card-title">Sobha Heartland Villa</h3>
+                  <p class="property-card-description">
+                    Lorem ipsum dolor sit amet consectetur. Mattis sit venenatis
+                    ornare egestas nunc. Et interdum pulvinar semper.
+                  </p>
+                  <div class="property-card-location-rating">
+                    <div class="property-card-location">Berlin, Germany</div>
+                    <div class="property-card-rating">
+                      <div class="property-rating-stars">
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <span class="property-rating-score">5.0</span>
+                    </div>
+                  </div>
+
+                  <div class="property-card-features">
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/beds.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>4 Bed</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/baths.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>3 Bath</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/area.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>1500 sqft</span>
+                    </div>
+                  </div>
+                  <div class="property-card-footer">
+                    <h4 class="property-card-price">$1,299.00</h4>
+                    <a class="property-detail-btn" href="#url">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Property 2 -->
+              <div class="property-listing-card2">
+                <div class="property-card-image">
+                  <img src="./assets/Rectangle 30.png" alt="Hillside Haven" />
+                  <div class="property-card-badge">For Rent</div>
+                </div>
+                <div class="property-card-info">
+                  <div class="property-card-type">Apartment</div>
+                  <h3 class="property-card-title">Hillside Haven</h3>
+                  <p class="property-card-description">
+                    Lorem ipsum dolor sit amet consectetur. Mattis sit venenatis
+                    ornare egestas nunc. Et interdum pulvinar semper.
+                  </p>
+
+                  <div class="property-card-location-rating">
+                    <div class="property-card-location">Genoa, Italy</div>
+                    <div class="property-card-rating">
+                      <div class="property-rating-stars">
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <span class="property-rating-score">5.0</span>
+                    </div>
+                  </div>
+
+                  <div class="property-card-features">
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/beds.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>4 Bed</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/baths.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>3 Bath</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/area.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>1500 sqft</span>
+                    </div>
+                  </div>
+
+                  <div class="property-card-footer">
+                    <h4 class="property-card-price">$1,099.00</h4>
+                    <a class="property-detail-btn" href="#url">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Property 3 -->
+              <div class="property-listing-card">
+                <div class="property-card-image">
+                  <img
+                    src="./assets/Rectangle 29_1.png"
+                    alt="Island Paradise Villa"
+                  />
+                  <div class="property-card-badge">For Sale</div>
+                </div>
+                <div class="property-card-info">
+                  <div class="property-card-type">Villa</div>
+                  <h3 class="property-card-title">Island Paradise Villa</h3>
+                  <p class="property-card-description">
+                    Lorem ipsum dolor sit amet consectetur. Mattis sit venenatis
+                    ornare egestas nunc. Et interdum pulvinar semper.
+                  </p>
+                  <div class="property-card-location-rating">
+                    <div class="property-card-location">Genoa, Italy</div>
+                    <div class="property-card-rating">
+                      <div class="property-rating-stars">
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <span class="property-rating-score">5.0</span>
+                    </div>
+                  </div>
+                  <div class="property-card-features">
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/beds.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>4 Bed</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/baths.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>3 Bath</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/area.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>1500 sqft</span>
+                    </div>
+                  </div>
+                  <div class="property-card-footer">
+                    <h4 class="property-card-price">$25,000.00</h4>
+                    <a class="property-detail-btn" href="#url">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- property 4 -->
+              <div class="property-listing-card2">
+                <div class="property-card-image">
+                  <img src="./assets/Rectangle 76_1.png" alt="Hillside Haven" />
+                  <div class="property-card-badge">For Rent</div>
+                </div>
+                <div class="property-card-info">
+                  <div class="property-card-type">Apartment</div>
+                  <h3 class="property-card-title">Emerald Coast Manor</h3>
+                  <p class="property-card-description">
+                    Lorem ipsum dolor sit amet consectetur. Mattis sit venenatis
+                    ornare egestas nunc. Et interdum pulvinar semper.
+                  </p>
+                  <div class="property-card-location-rating">
+                    <div class="property-card-location">Genoa, Italy</div>
+                    <div class="property-card-rating">
+                      <div class="property-rating-stars">
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <span class="property-rating-score">5.0</span>
+                    </div>
+                  </div>
+                  <div class="property-card-features">
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/beds.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>4 Bed</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/baths.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>3 Bath</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/area.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>1500 sqft</span>
+                    </div>
+                  </div>
+                  <div class="property-card-footer">
+                    <h4 class="property-card-price">$19,000.00</h4>
+                    <a class="property-detail-btn" href="#url">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Property 5 -->
+              <div class="property-listing-card">
+                <div class="property-card-image">
+                  <img
+                    src="./assets/Rectangle 31.png"
+                    alt="Island Paradise Villa"
+                  />
+                  <div class="property-card-badge">For Sale</div>
+                </div>
+                <div class="property-card-info">
+                  <div class="property-card-type">Villa</div>
+                  <h3 class="property-card-title">Crystal Cottage</h3>
+                  <p class="property-card-description">
+                    Lorem ipsum dolor sit amet consectetur. Mattis sit venenatis
+                    ornare egestas nunc. Et interdum pulvinar semper.
+                  </p>
+                  <div class="property-card-location-rating">
+                    <div class="property-card-location">Genoa, Italy</div>
+                    <div class="property-card-rating">
+                      <div class="property-rating-stars">
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <span class="property-rating-score">5.0</span>
+                    </div>
+                  </div>
+                  <div class="property-card-features">
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/beds.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>4 Bed</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/baths.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>3 Bath</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/area.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>1500 sqft</span>
+                    </div>
+                  </div>
+                  <div class="property-card-footer">
+                    <h4 class="property-card-price">$30,000.00</h4>
+                    <a class="property-detail-btn" href="#url">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Property 6 -->
+              <div class="property-listing-card2">
+                <div class="property-card-image">
+                  <img src="./assets/Rectangle 30.png" alt="Hillside Haven" />
+                  <div class="property-card-badge">For Rent</div>
+                </div>
+                <div class="property-card-info">
+                  <div class="property-card-type">Apartment</div>
+                  <h3 class="property-card-title">Little Acom</h3>
+                  <p class="property-card-description">
+                    Lorem ipsum dolor sit amet consectetur. Mattis sit venenatis
+                    ornare egestas nunc. Et interdum pulvinar semper.
+                  </p>
+                  <div class="property-card-location-rating">
+                    <div class="property-card-location">Genoa, Italy</div>
+                    <div class="property-card-rating">
+                      <div class="property-rating-stars">
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="star">
+                          <img
+                            src="./assets/icons/material-symbols_star-rounded.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <span class="property-rating-score">5.0</span>
+                    </div>
+                  </div>
+                  <div class="property-card-features">
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/beds.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>4 Bed</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/baths.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>3 Bath</span>
+                    </div>
+                    <div class="property-feature">
+                      <img
+                        src="./assets/icons/area.png"
+                        class="property-feature-icon"
+                        alt=""
+                      />
+                      <span>1500 sqft</span>
+                    </div>
+                  </div>
+                  <div class="property-card-footer">
+                    <h4 class="property-card-price">$1,099.00</h4>
+                    <a class="property-detail-btn" href="#url">DETAIL</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="companies-section">
+      <div class="container">
+        <div class="companies-section-content">
+          <h5>Trusted by 200+ Companies</h5>
+          <div class="scrl-wrpr">
+            <div class="img-item" style="--i: 1">
+              <img src="./assets/company-logos/image 187.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 2">
+              <img src="./assets/company-logos/image 189.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 3">
+              <img src="./assets/company-logos/image 190.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 4">
+              <img src="./assets/company-logos/image 191.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 5">
+              <img src="./assets/company-logos/image 192.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="newsletter-area aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="newsletter-area-header">
+              <h5>Newsletter To Get Updated The Latest News</h5>
+            </div>
+            <form class="newsletter-form">
+              <div class="input-text">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="col-5">
+              <div class="footer-left" data-aos="fade-right" data-aos-duration="600">
+                <a href="index.html" class="footer-logo">
+                  <img src="./assets/logos/Group 24 (1).png" alt="" />
+                </a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Pharetra ornare
+                  aliquet nunc dui in scelerporttitor. Proin ullamcorper.
+                </p>
+                <div class="social-icons">
+                  <a href="#url" class="social-icon1">
+                    <img src="./assets/icons/line-md_facebook.png" alt="" />
+                  </a>
+                  <a href="#url" class="social-icon2">
+                    <img
+                      src="./assets/icons/mingcute_twitter-fill.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#url" class="social-icon3">
+                    <img
+                      src="./assets/icons/lets-icons_insta-fill.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#url" class="social-icon4">
+                    <img
+                      src="./assets/icons/mingcute_youtube-fill.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="divider2"></div>
+            <div class="col-2">
+              <div class="footer-center" data-aos="fade-up" data-aos-duration="600">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="properties.html">Properties</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-right" data-aos="fade-left" data-aos-duration="600">
+                <h4>Our Properties</h4>
+                <div class="property-images-container">
+                  <div class="property-image-row">
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 44.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 42.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 30.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/image.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="property-image-row">
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 31.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 32.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 54.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 55.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="subfooter-content">
+              <div class="subfooter-content-left">
+                <p>Copyright &copy;2024 VeroSpace, All rights reserved</p>
+              </div>
+              <div class="subfooter-content-right">
+                <a href="#url">Term of Service</a>
+                <a href="#url">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="loginModal">
+      <div class="modal">
+        <button class="close-modal" id="closeLoginModal">&times;</button>
+        <h2>User Login</h2>
+        <p>Hey, enter your detail to get login<br />to your account</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <input type="text" placeholder="username" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="password" required />
+          </div>
+          <div class="forgot-password">
+            <a href="#" id="forgotPasswordLink">Forgot password?</a>
+          </div>
+          <button type="submit" class="modal-btn">LOGIN</button>
+          <div class="switch-modal">
+            You don't have an account?
+            <a href="#" id="switchToRegister">Create an account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="registerModal">
+      <div class="modal">
+        <button class="close-modal" id="closeRegisterModal">&times;</button>
+        <h2>Create an Account</h2>
+        <p>Fill up details below to get register</p>
+
+        <form id="registerForm">
+          <div class="form-rowss">
+            <div class="form-group">
+              <input type="text" placeholder="First name" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="form-rowss">
+            <div class="form-group">
+              <input type="tel" placeholder="Phone" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Confirm password" required />
+          </div>
+          <div class="terms-text">
+            By create an account accept our <a href="#">Terms & Conditions</a>
+          </div>
+          <button type="submit" class="modal-btn">REGISTER</button>
+          <div class="switch-modal">
+            Already have an account?
+            <a href="#" id="switchToLogin">Login here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Local JS fles -->
+    <script src="./js/AOS.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/properties.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

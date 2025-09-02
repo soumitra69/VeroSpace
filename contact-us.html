@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us : VeroSpace</title>
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS for Styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsiveCSS.css" />
+    <link rel="stylesheet" href="./css/pages/contact-us.css" />
+    <!-- Remove GSAP and ScrollTrigger CDN -->
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+              <img src="./assets/logos/Group 24.png" alt="" />
+            </a>
+            <div class="menu" id="menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-links">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about.html">About Us</a></li>
+              <li><a class="nav-link" href="properties.html">Properties</a></li>
+            </ul>
+            <div class="nav-btns">
+              <a href="contact-us.html" class="nav-link">Contact Us</a>
+              <a href="#" class="btn-login" id="loginBtn">Login</a>
+            </div>
+          </nav>
+          <div class="mobile-overlay">
+            <button class="close-menu">×</button>
+            <div class="mobile-menu-content">
+              <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li>
+                  <a href="properties.html" class="nav-link">Properties</a>
+                </li>
+                <li>
+                  <a href="contact-us.html" class="nav-link">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-login" id="mobileLoginBtn">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+
+    <section class="banner-section">
+      <div class="banner-wrppr2" data-aos="fade-left" data-aos-duration="500">
+        <div class="container">
+          <div class="banner-content">
+            <h1>Contact Us</h1>
+            <p>
+              Home
+              <span class="arrow">
+                <img src="./assets/icons/mdi_arrow-right-thin.png" alt="" />
+              </span>
+              Contact Us
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-in-touch-section">
+      <div class="container">
+        <div class="get-in-touch-content">
+          <div class="col-5" data-aos="fade-right" data-aos-duration="500">
+            <div class="get-in-touch-content-left">
+              <div class="get-in-touch-content-header">
+                <div class="divider1"></div>
+                <span>Get In Touch</span>
+              </div>
+              <h2>How We Can Help You?</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Turpis faucibus nulla
+                vestibulum dolor. Dictum.
+              </p>
+
+              <div class="divider"></div>
+
+              <div class="contact-area">
+                <div class="contact-area-row">
+                  <div class="contact-area-icon">
+                    <img src="./assets/icons/building-symbol.png" alt="" />
+                  </div>
+                  <div class="contact-content">
+                    <h3>Our Address</h3>
+                    <p>
+                      <a href="https://google.com/maps"
+                        >2690 Hiltona Street Victoria Road, New York, Canada</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-area-row">
+                  <div class="contact-area-icon">
+                    <img src="./assets/icons/phone-symbol.png" alt="" />
+                  </div>
+                  <div class="contact-content">
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+01092562569">+01 09 256 2569</a></p>
+                  </div>
+                </div>
+                <div class="contact-area-row">
+                  <div class="contact-area-icon">
+                    <img src="./assets/icons/mail-symbol.png" alt="" />
+                  </div>
+                  <div class="contact-content">
+                    <h3>Email Address</h3>
+                    <p>
+                      <a href="mailto:support24@verospace.com"
+                        >support24@verospace.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-7" data-aos="fade-left" data-aos-duration="500">
+            <div class="contact-form-area">
+              <form id="contactForm">
+                <div class="form-row1">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Last name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row1">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section" data-aos="fade-right" data-aos-duration="500">
+      <div class="container">
+        <div class="col-6">
+          <div class="faq-content">
+            <div class="faq-content-header">
+              <div class="divider1"></div>
+              <span>Get In Touch</span>
+            </div>
+            <h3>We’re Here To Help You</h3>
+
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <span
+                    >What services does your real estate agency provide?</span
+                  >
+                  <div class="chevron"></div>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh. Tortor sed quis arcu risus
+                      sollicitudin lacus donec in commodo.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item active">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <span
+                    >How do I get started with buying or selling a
+                    property?</span
+                  >
+                  <div class="chevron"></div>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh. Tortor sed quis arcu risus
+                      sollicitudin lacus donec in commodo.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Are your agents licensed and experienced?</span>
+                  <div class="chevron"></div>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh. Tortor sed quis arcu risus
+                      sollicitudin lacus donec in commodo.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <span
+                    >Do I need to make repairs or renovations before
+                    selling?</span
+                  >
+                  <div class="chevron"></div>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh. Tortor sed quis arcu risus
+                      sollicitudin lacus donec in commodo.
+                    </p>
+                    Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                    gravida velit in nibh.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <span
+                    >Do you offer help with relocation or moving services?</span
+                  >
+                  <div class="chevron"></div>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh. Tortor sed quis arcu risus
+                      sollicitudin lacus donec in commodo.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Et eget massa sed
+                      gravida velit in nibh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="companies-section">
+      <div class="container">
+        <div class="companies-section-content">
+          <h5>Trusted by 200+ Companies</h5>
+          <div class="scrl-wrpr">
+            <div class="img-item" style="--i: 1">
+              <img src="./assets/company-logos/image 187.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 2">
+              <img src="./assets/company-logos/image 189.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 3">
+              <img src="./assets/company-logos/image 190.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 4">
+              <img src="./assets/company-logos/image 191.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 5">
+              <img src="./assets/company-logos/image 192.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="newsletter-area aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="newsletter-area-header">
+              <h5>Newsletter To Get Updated The Latest News</h5>
+            </div>
+            <form class="newsletter-form">
+              <div class="input-text">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="col-5">
+              <div
+                class="footer-left"
+                data-aos="fade-right"
+                data-aos-duration="600"
+              >
+                <a href="index.html" class="footer-logo">
+                  <img src="./assets/logos/Group 24 (1).png" alt="" />
+                </a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Pharetra ornare
+                  aliquet nunc dui in scelerporttitor. Proin ullamcorper.
+                </p>
+                <div class="social-icons">
+                  <a href="#url" class="social-icon1">
+                    <img src="./assets/icons/line-md_facebook.png" alt="" />
+                  </a>
+                  <a href="#url" class="social-icon2">
+                    <img
+                      src="./assets/icons/mingcute_twitter-fill.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#url" class="social-icon3">
+                    <img
+                      src="./assets/icons/lets-icons_insta-fill.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#url" class="social-icon4">
+                    <img
+                      src="./assets/icons/mingcute_youtube-fill.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="divider2"></div>
+            <div class="col-2">
+              <div
+                class="footer-center"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="properties.html">Properties</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div
+                class="footer-right"
+                data-aos="fade-left"
+                data-aos-duration="600"
+              >
+                <h4>Our Properties</h4>
+                <div class="property-images-container">
+                  <div class="property-image-row">
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 44.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 42.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 30.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/image.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="property-image-row">
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 31.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 32.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 54.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 55.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="subfooter-content">
+              <div class="subfooter-content-left">
+                <p>Copyright &copy;2024 VeroSpace, All rights reserved</p>
+              </div>
+              <div class="subfooter-content-right">
+                <a href="#url">Term of Service</a>
+                <a href="#url">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="loginModal">
+      <div class="modal">
+        <button class="close-modal" id="closeLoginModal">&times;</button>
+        <h2>User Login</h2>
+        <p>Hey, enter your detail to get login<br />to your account</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <input type="text" placeholder="username" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="password" required />
+          </div>
+          <div class="forgot-password">
+            <a href="#" id="forgotPasswordLink">Forgot password?</a>
+          </div>
+          <button type="submit" class="modal-btn">LOGIN</button>
+          <div class="switch-modal">
+            You don't have an account?
+            <a href="#" id="switchToRegister">Create an account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="registerModal">
+      <div class="modal">
+        <button class="close-modal" id="closeRegisterModal">&times;</button>
+        <h2>Create an Account</h2>
+        <p>Fill up details below to get register</p>
+
+        <form id="registerForm">
+          <div class="form-rowss">
+            <div class="form-group">
+              <input type="text" placeholder="First name" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="form-rowss">
+            <div class="form-group">
+              <input type="tel" placeholder="Phone" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Confirm password" required />
+          </div>
+          <div class="terms-text">
+            By create an account accept our <a href="#">Terms & Conditions</a>
+          </div>
+          <button type="submit" class="modal-btn">REGISTER</button>
+          <div class="switch-modal">
+            Already have an account?
+            <a href="#" id="switchToLogin">Login here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/AOS.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/contact-us.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

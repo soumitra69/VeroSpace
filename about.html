@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us : VeroSpace</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS for Styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pages/about-us.css" />
+    <link rel="stylesheet" href="./css/responsiveCSS.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+              <img src="./assets/logos/Group 24.png" alt="" />
+            </a>
+            <div class="menu" id="menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-links">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about.html">About Us</a></li>
+              <li><a class="nav-link" href="properties.html">Properties</a></li>
+            </ul>
+            <div class="nav-btns">
+              <a href="contact-us.html" class="nav-link">Contact Us</a>
+              <a href="#" class="btn-login" id="loginBtn">Login</a>
+            </div>
+          </nav>
+          <div class="mobile-overlay">
+            <button class="close-menu">×</button>
+            <div class="mobile-menu-content">
+              <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li>
+                  <a href="properties.html" class="nav-link">Properties</a>
+                </li>
+                <li>
+                  <a href="contact-us.html" class="nav-link">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-login" id="mobileLoginBtn">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+
+    <section class="banner-section">
+      <div class="banner-wrppr1" data-aos="fade-left" data-aos-duration="500">
+        <div class="container">
+          <div class="banner-content">
+            <h1>About Us</h1>
+            <p>
+              <a href="index.html">Home</a>
+              <span class="arrow">
+                <img src="./assets/icons/mdi_arrow-right-thin.png" alt="" />
+              </span>
+              <a href="about.html">About Us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartment Section -->
+
+    <section class="apartment-section">
+      <div class="container">
+        <div class="about-us-section-content">
+          <div class="col-6" data-aos="fade-right" data-aos-duration="500">
+            <div class="image-container">
+              <div class="top-img2">
+                <img src="./assets/Rectangle 61.png" alt="" />
+              </div>
+              <div class="bottom-img2">
+                <img src="./assets/Rectangle 62.png" alt="" />
+              </div>
+              <div class="overlay">
+                <p>
+                  200+ <br />
+                  <span>Companies Trust Us</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6" data-aos="fade-left" data-aos-duration="500">
+            <div class="about-text-content">
+              <div class="about-text-header">
+                <div class="divider1"></div>
+                <a href="#url">About Us</a>
+              </div>
+              <h3>The Real Estate Company You Can Trust To Keep It Real</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor
+                risus ac massa sed. Dignissim cursus mattis lectus nunc tempus
+                adipiscing nulla a justo. Orci ut maecenas varius dui volutpat
+              </p>
+
+              <div class="experience-box">
+                <div class="text-container">
+                  <h3>15 Years Of Experince</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+
+              <div class="stats-row">
+                <div class="stat-card">
+                  <span class="stat-icon-bg">
+                    <img src="./assets/icons/fa-solid_smile.png" alt="" />
+                  </span>
+                  <span class="stat-details">
+                    <span
+                      class="stat-number"
+                      data-target="15000"
+                      id="trustedCustomers"
+                      >0K+</span
+                    >
+                    <span class="stat-label">Trusted Customer</span>
+                  </span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-icon-bg">
+                    <img src="./assets/icons/gridicons_house.png" alt="" />
+                  </span>
+                  <span class="stat-details">
+                    <span
+                      class="stat-number"
+                      data-target="20000"
+                      id="housesSold"
+                      >0K+</span
+                    >
+                    <span class="stat-label">Houses Sold</span>
+                  </span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-icon-bg">
+                    <img
+                      src="./assets/icons/fluent_agents-28-filled.png"
+                      alt=""
+                    />
+                  </span>
+                  <span class="stat-details">
+                    <span
+                      class="stat-number"
+                      data-target="75000"
+                      id="propertyListed"
+                      >0K+</span
+                    >
+                    <span class="stat-label">Property Listed</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commitment Section -->
+
+    <section class="commitment-section">
+      <div class="container">
+        <div class="commitment-content">
+          <div class="col-6" data-aos="fade-right" data-aos-duration="500">
+            <div class="commitment-image-container">
+              <img src="./assets/Rectangle 64.png" alt="" />
+            </div>
+          </div>
+          <div class="col-6" data-aos="fade-left" data-aos-duration="500">
+            <div class="commitment-text-content">
+              <div class="commitment-section-header">
+                <div class="divider1"></div>
+                <a href="#url">Our Commitment</a>
+              </div>
+              <h3>Because a home can change everything</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor
+                risus ac massa sed. Dignissim cursus mattis lectus nunc.
+              </p>
+              <div class="mission-vision-area">
+                <div class="vision-area">
+                  <h4>Our Vision</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor
+                    risus ac massa sed. Dignissim cursus mattis.
+                  </p>
+                </div>
+                <div class="mission-area">
+                  <h4>Our Mission</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor
+                    risus ac massa sed. Dignissim cursus mattis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams-section" data-aos="fade-left" data-aos-duration="500">
+      <div class="teams-wrppr">
+        <div class="container">
+          <div class="teams-section-content">
+            <div class="teams-section-header">
+              <div class="divider1"></div>
+              <a href="#url">Professional Experts</a>
+            </div>
+            <h3>Meet Our Real Estate Team</h3>
+          </div>
+          <div class="teams-section-cards swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 65.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Michel Smith</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 67.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Lissa Mormont</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 69.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Tony Hemsworth</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 71.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Jack Rozer</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 65.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Michel Smith</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 67.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Lissa Mormont</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 69.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Tony Hemsworth</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 71.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Jack Rozer</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 65.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Michel Smith</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 67.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Lissa Mormont</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 69.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Tony Hemsworth</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="teams-section-card">
+                  <div class="teams-section-card-img">
+                    <img src="./assets/Rectangle 71.png" alt="" />
+                  </div>
+                  <div class="txt-overlay1">
+                    <div class="txt-overlay-row">
+                      <div class="txt-overlay-content">
+                        <h3>Jack Rozer</h3>
+                        <p>Property Expert</p>
+                      </div>
+                      <a href="tel:+1 8709932406" class="call-icon">
+                        <img src="./assets/icons/gg_phone.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="companies-section">
+      <div class="container">
+        <div class="companies-section-content">
+          <h5>Trusted by 200+ Companies</h5>
+          <div class="scrl-wrpr">
+            <div class="img-item" style="--i: 1">
+              <img src="./assets/company-logos/image 187.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 2">
+              <img src="./assets/company-logos/image 189.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 3">
+              <img src="./assets/company-logos/image 190.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 4">
+              <img src="./assets/company-logos/image 191.png" alt="" />
+            </div>
+            <div class="img-item" style="--i: 5">
+              <img src="./assets/company-logos/image 192.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="newsletter-area aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="newsletter-area-header">
+              <h5>Newsletter To Get Updated The Latest News</h5>
+            </div>
+            <form class="newsletter-form">
+              <div class="input-text">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="col-5">
+              <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                  <img src="./assets/logos/Group 24 (1).png" alt="" />
+                </a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Pharetra ornare
+                  aliquet nunc dui in scelerporttitor. Proin ullamcorper.
+                </p>
+                <div class="social-icons">
+                  <a href="#url" class="social-icon1">
+                    <img src="./assets/icons/line-md_facebook.png" alt="" />
+                  </a>
+                  <a href="#url" class="social-icon2">
+                    <img
+                      src="./assets/icons/mingcute_twitter-fill.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#url" class="social-icon3">
+                    <img
+                      src="./assets/icons/lets-icons_insta-fill.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#url" class="social-icon4">
+                    <img
+                      src="./assets/icons/mingcute_youtube-fill.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="divider2"></div>
+            <div class="col-2">
+              <div class="footer-center">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="properties.html">Properties</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-right">
+                <h4>Our Properties</h4>
+                <div class="property-images-container">
+                  <div class="property-image-row">
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 44.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 42.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 30.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/image.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="property-image-row">
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 31.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 32.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 54.png" alt="" />
+                    </div>
+                    <div class="property-images">
+                      <img src="./assets/Rectangle 55.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="subfooter-content">
+              <div class="subfooter-content-left">
+                <p>Copyright &copy;2024 VeroSpace, All rights reserved</p>
+              </div>
+              <div class="subfooter-content-right">
+                <a href="#url">Term of Service</a>
+                <a href="#url">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="loginModal">
+      <div class="modal">
+        <button class="close-modal" id="closeLoginModal">&times;</button>
+        <h2>User Login</h2>
+        <p>Hey, enter your detail to get login<br />to your account</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <input type="text" placeholder="username" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="password" required />
+          </div>
+          <div class="forgot-password">
+            <a href="#" id="forgotPasswordLink">Forgot password?</a>
+          </div>
+          <button type="submit" class="modal-btn">LOGIN</button>
+          <div class="switch-modal">
+            You don't have an account?
+            <a href="#" id="switchToRegister">Create an account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="registerModal">
+      <div class="modal">
+        <button class="close-modal" id="closeRegisterModal">&times;</button>
+        <h2>Create an Account</h2>
+        <p>Fill up details below to get register</p>
+
+        <form id="registerForm">
+          <div class="form-rowss">
+            <div class="form-group">
+              <input type="text" placeholder="First name" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="form-rowss">
+            <div class="form-group">
+              <input type="tel" placeholder="Phone" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Confirm password" required />
+          </div>
+          <div class="terms-text">
+            By create an account accept our <a href="#">Terms & Conditions</a>
+          </div>
+          <button type="submit" class="modal-btn">REGISTER</button>
+          <div class="switch-modal">
+            Already have an account?
+            <a href="#" id="switchToLogin">Login here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- AOS CDN JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS Files -->
+
+    <script src="./js/AOS.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/about.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

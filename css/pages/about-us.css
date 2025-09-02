@@ -1,0 +1,437 @@
+.banner-content > p > a {
+  color: var(--color-white);
+}
+
+.banner-content > p > span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.banner-content > p > span > img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.banner-wrppr1 {
+  background: url("../../assets/banner/Banner1.png") no-repeat center
+    center/cover;
+  min-height: 462px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+}
+
+
+.about-us-section {
+  min-height: 616px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-us-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-img2 {
+  max-width: 85%;
+  /* height: 100%; */
+  margin: 0 auto;
+}
+.top-img2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 40px;
+}
+
+.bottom-img2 {
+  position: absolute;
+  bottom: -35px;
+  right: -50px;
+  width: 50%;
+  border: 10px solid var(--color-white);
+  border-radius: 40px;
+}
+.bottom-img2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 43%;
+  right: 50px;
+  padding: 28px 29px 28px 35px;
+  background: var(--color-primary);
+  border-radius: 25px;
+}
+
+.overlay > p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+}
+
+.overlay > p > span {
+  font-size: 16px;
+}
+
+.experience-box {
+  display: flex;
+
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  min-height: 55px;
+}
+
+.experience-box::before {
+  content: "";
+  width: 2.5px;
+  height: 55px;
+  background-color: #6a5acd; /* Purple line */
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 29px 50px;
+}
+
+.text-container > h3 {
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--color-dark-grey-4);
+}
+
+.text-container > p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-dark-grey-1);
+}
+
+.commitment-section {
+  min-height: 600px;
+  padding-block: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commitment-content {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.commitment-image-container {
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 40px;
+  background: var(--color-light-grey-4);
+}
+
+.commitment-image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 40px;
+}
+
+.commitment-text-content {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.commitment-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 265px;
+  width: 100%;
+}
+
+.commitment-section-header > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark-grey-3);
+}
+
+.commitment-section-header:hover .divider1 {
+  width: 65px;
+}
+
+.commitment-text-content > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--color-dark-grey-4);
+  margin-block: 16px;
+  text-transform: capitalize;
+}
+
+.commitment-text-content > p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-dark-grey-1);
+  margin-block: 15px 31px;
+}
+
+.mission-vision-area {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.vision-area {
+  width: 243px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mission-area{
+  width: 243px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.vision-area > h4,
+.mission-area > h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--color-dark-grey-4);
+  text-transform: capitalize;
+}
+
+.vision-area > p,
+.mission-area > p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-dark-grey-1);
+}
+
+/* Teams Section */
+
+.teams-section {
+  padding: 0 30px;
+}
+
+.teams-wrppr {
+  max-width: 1540px;
+  padding-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: var(--color-off-white-1);
+  border-radius: 40px;
+  flex-direction: column;
+}
+
+.teams-section-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.teams-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 277px;
+  width: 100%;
+}
+
+.teams-section-header > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark-grey-3);
+}
+
+.teams-section-header:hover .divider1 {
+  width: 65px;
+}
+
+.teams-section-content > h3 {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--color-dark-grey-3);
+  margin-top: 11px 41px;
+}
+
+.teams-section-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.teams-section-card {
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 100%;
+  border-radius: 25px;
+  position: relative;
+}
+.teams-section-card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.teams-section-card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.txt-overlay1 {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  right: 0;
+  background: var(--color-black-70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 11px;
+  margin-right: 10px;
+  padding: 12px 19px 13px 20px;
+  border-radius: 25px;
+  gap: 10px;
+  min-height: 70px;
+}
+
+.txt-overlay-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.txt-overlay-content {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  flex-direction: column;
+}
+
+.txt-overlay-content > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.txt-overlay-content > p {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.call-icon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.call-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.teams-section-cards.swiper-container {
+  width: 100%;
+  margin-top: 48px;
+  overflow: hidden;
+}
+.teams-section-cards .swiper-wrapper {
+  display: flex;
+}
+.teams-section-cards .swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.teams-section-cards .swiper-pagination-bullet {
+  width: 32px;
+  height: 4px;
+  border-radius: 3px;
+  margin: 0 4px !important;
+  background: #e0e0e0;
+  opacity: 1 !important;
+  transition: background 0.2s;
+}
+.teams-section-cards .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+.teams-section-cards .swiper-button-next,
+.teams-section-cards .swiper-button-prev {
+  color: var(--color-primary);
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.teams-section-cards .swiper-button-next {
+  right: 10px;
+}
+.teams-section-cards .swiper-button-prev {
+  left: 10px;
+}
+
+
+
